@@ -1,0 +1,131 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!dist",
+      "!build"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      }
+    },
+    "domains": {
+      "react": "recommended"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "arrowParentheses": "always",
+      "lineEnding": "lf",
+      "trailingCommas": "none",
+      "semicolons": "asNeeded",
+      "bracketSpacing": true,
+      "quoteStyle": "single",
+      "bracketSameLine": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "recommended": true,
+        "useSortedProperties": "on",
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              ":NODE:",
+              ":PACKAGE:",
+              ":BLANK_LINE:",
+              [
+                "@/types",
+                "@/types/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/config",
+                "@/config/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/assets",
+                "@/assets/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/lib",
+                "@/lib/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/services",
+                "@/services/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/utils",
+                "@/utils/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/store",
+                "@/store/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/contexts",
+                "@/contexts/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/hooks",
+                "@/hooks/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/pages",
+                "@/pages/**"
+              ],
+              ":BLANK_LINE:",
+              [
+                "@/components",
+                "@/components/**"
+              ],
+              ":BLANK_LINE:",
+              "@/**",
+              ":BLANK_LINE:",
+              ":PATH:"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@ Inside `biome.json`
 }
 ```
 
-### React (without Next.js)
+### React
 
 Install dependencies:
 
